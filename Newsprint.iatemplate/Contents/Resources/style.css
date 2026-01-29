@@ -61,6 +61,7 @@ html {
 	color: var(--text-color);
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
+	height: 100%;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
 	color: var(--text-color);
 	font-family: "PT Serif", "Times New Roman", Times, serif;
 	line-height: 1.5;
+	min-height: 100%;
 }
 
 #write {
@@ -334,6 +336,18 @@ body {
 	letter-spacing: 0.02em;
 }
 
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.footer p {
+	width: 100%;
+}
+
+
 html.night-mode {
 	--bg-color: #1e1a18;
 	--text-color: #efe7db;
@@ -395,10 +409,13 @@ html.content-size-accessibility-xxxl {
 }
 
 @media print {
-	html,
+	/* html,
 	body {
 		-webkit-print-color-adjust: exact;
 		print-color-adjust: exact;
+	} */
+	:root {
+		--bg-color: #ffffff;
 	}
 
 	#write {
