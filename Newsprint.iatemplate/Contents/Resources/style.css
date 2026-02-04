@@ -422,6 +422,10 @@ html.content-size-accessibility-xxxl {
 		--bg-color: #ffffff;
 	}
 
+	html {
+		font-size: 10.5pt;
+	}
+
 	#write {
 		max-width: var(--page-width);
 		margin: 0 auto;
