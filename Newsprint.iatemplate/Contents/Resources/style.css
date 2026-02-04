@@ -184,6 +184,11 @@ body {
 	margin-bottom: 0;
 }
 
+#write li > ul:last-child,
+#write li > ol:last-child {
+	margin-bottom: 0.5em;
+}
+
 #write ol ol > li {
 	list-style-type: lower-alpha;
 }
